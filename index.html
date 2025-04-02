@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <ul>
+        <li>Pagos</li>
+        <li>Artesanias</li>
+        <li>Contacto</li>
+      </ul>
+    </header>
+
+    <main>
+      <section>
+        <h1>Gel Artessia</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat eaque exercitationem quisquam? Voluptatem
+          doloribus officiis odio laborum, maiores eaque aspernatur beatae obcaecati, illum voluptates maxime corporis
+          fuga ad placeat.
+        </p>
+      </section>
+      <div>
+        <img src="./public/arte.webp" alt="logo principal">
+      </div>
+    </main>
+
+    <section id="about-us">
+      <h2>Sobre nosotros</h2>
+      <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quos officia nam amet deleniti debitis quam
+          perferendis a est mollitia facere, enim doloribus impedit illo neque iure soluta? Nulla, optio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iste odit, vel perspiciatis sequi tenetur harum
+          placeat, mollitia fugit repudiandae reprehenderit necessitatibus non impedit nemo voluptates sapiente, optio
+          earum possimus!</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Nuestros servicios</h2>
+      <div id="products-panel">
+        <div class="card" onclick="addToCar('Sencillo')">
+          <img src="./public/arte.webp" alt="jarron">
+          <h3>Sencillo</h3>
+        </div>
+        <div class="card" onclick="addToCar('CaraLirul')">
+          <img src="./public/j10.png" alt="jarron">
+          <h3>CaraLirul</h3>
+        </div>
+        <div class="card" onclick="addToCar('Espiral')">
+          <img src="./public/j11.webp" alt="jarron">
+          <h3>Espiral</h3>
+        </div>
+        <div class="card" onclick="addToCar('Corasao')">
+          <img src="./public/j9.png" alt="jarron">
+          <h3>Corasao</h3>
+        </div>
+        <div class="card" onclick="addToCar('Firulais')">
+          <img src="./public/j8.png" alt="jarron">
+          <h3>Firulais</h3>
+        </div>
+        <div class="card" onclick="addToCar('Creeper')">
+          <img src="./public/j7.png" alt="jarron">
+          <h3>Creeper</h3>
+        </div>
+        <div class="card" onclick="addToCar('Tequila')">
+          <img src="./public/j6.png" alt="jarron">
+          <h3>Tequila</h3>
+        </div>
+        <div class="card" onclick="addToCar('Arco')">
+          <img src="./public/j5.png" alt="jarron">
+          <h3>Arco</h3>
+        </div>
+        <div class="card" onclick="addToCar('Caña')">
+          <img src="./public/j4.png" alt="jarron">
+          <h3>Caña</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="pay-section">
+      <h2>Pago</h2>
+      <div id="sep-sec">
+        <div>
+          <h3>Jarrones elegidos:</h3>
+          <ul>
+            <li>Sencillo: <span id="Sencillo">0</span></li>
+            <li>CaraLirul: <span id="CaraLirul">0</span></li>
+            <li>Espiral: <span id="Espiral">0</span></li>
+            <li>Corasao: <span id="Corasao">0</span></li>
+            <li>Firulais: <span id="Firulais">0</span></li>
+            <li>Creeper: <span id="Creeper">0</span></li>
+            <li>Tequila: <span id="Tequila">0</span></li>
+            <li>Arco: <span id="Arco">0</span></li>
+            <li>Caña: <span id="Caña">0</span></li>
+          </ul>
+        </div>
+        <div id="pay-form">
+          <h2>Formulario de pago</h2>
+          <input type="text" placeholder="nombre del titular">
+          <input type="text" placeholder="número de tarjeta" pattern="\d{16}" class="inp" required>
+          <div>
+            <input type="text" placeholder="mm" pattern="\d{2}" class="inp" required>
+            <span>/</span>
+            <input type="text" placeholder="aa" pattern="\d{2}" class="inp" required>
+          </div>
+          <input type="text" placeholder="cvv" pattern="\d{3}" class="inp" required>
+          <p>Total: <span id="tot"></span> MXN.</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

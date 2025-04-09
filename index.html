@@ -13,9 +13,9 @@
   <div id="app">
     <header>
       <ul>
-        <li>Pagos</li>
-        <li>Artesanias</li>
-        <li>Contacto</li>
+        <li><a href="#pay-section">Pagos</a></li>
+        <li><a href="#services">Artesanias</a></li>
+        <!-- <li>Contacto</li> -->
       </ul>
     </header>
 
@@ -29,7 +29,7 @@
         </p>
       </section>
       <div>
-        <img src="./public/arte.webp" alt="logo principal">
+        <img src="./arte.webp" alt="logo principal">
       </div>
     </main>
 
@@ -48,39 +48,39 @@
       <h2>Nuestros servicios</h2>
       <div id="products-panel">
         <div class="card" onclick="addToCar('Sencillo')">
-          <img src="./public/arte.webp" alt="jarron">
+          <img src="./arte.webp" alt="jarron">
           <h3>Sencillo</h3>
         </div>
         <div class="card" onclick="addToCar('CaraLirul')">
-          <img src="./public/j10.png" alt="jarron">
+          <img src="./j10.png" alt="jarron">
           <h3>CaraLirul</h3>
         </div>
         <div class="card" onclick="addToCar('Espiral')">
-          <img src="./public/j11.webp" alt="jarron">
+          <img src="./j11.webp" alt="jarron">
           <h3>Espiral</h3>
         </div>
         <div class="card" onclick="addToCar('Corasao')">
-          <img src="./public/j9.png" alt="jarron">
+          <img src="./j9.png" alt="jarron">
           <h3>Corasao</h3>
         </div>
         <div class="card" onclick="addToCar('Firulais')">
-          <img src="./public/j8.png" alt="jarron">
+          <img src="./j8.png" alt="jarron">
           <h3>Firulais</h3>
         </div>
         <div class="card" onclick="addToCar('Creeper')">
-          <img src="./public/j7.png" alt="jarron">
+          <img src="./j7.png" alt="jarron">
           <h3>Creeper</h3>
         </div>
         <div class="card" onclick="addToCar('Tequila')">
-          <img src="./public/j6.png" alt="jarron">
+          <img src="./j6.png" alt="jarron">
           <h3>Tequila</h3>
         </div>
         <div class="card" onclick="addToCar('Arco')">
-          <img src="./public/j5.png" alt="jarron">
+          <img src="./j5.png" alt="jarron">
           <h3>Arco</h3>
         </div>
         <div class="card" onclick="addToCar('Caña')">
-          <img src="./public/j4.png" alt="jarron">
+          <img src="./j4.png" alt="jarron">
           <h3>Caña</h3>
         </div>
       </div>
@@ -114,7 +114,7 @@
           </div>
           <input type="text" placeholder="cvv" pattern="\d{3}" class="inp" required>
           <p>Total: <span id="tot"></span> MXN.</p>
-          <button>Comprar</button>
+          <button onclick="pay()">Comprar</button>
         </div>
       </div>
     </section>

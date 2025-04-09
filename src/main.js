@@ -10,10 +10,10 @@ const addToCar = (prodId) => {
     document.getElementById('tot').innerText = totales * 51;
 }
 
+const inps = document.getElementsByClassName('inp');
 const pay = () => {
-    const inps = document.getElementsByClassName('inp');
     let valid = true;
-    for (let inp in inps) {
+    for (let inp of inps) {
         valid = valid && inp.checkValidity();
     }
     if (valid) alert('compra realizada con exito');
@@ -21,3 +21,4 @@ const pay = () => {
 }
 
 window.addToCar = addToCar;
+window.pay = pay;
